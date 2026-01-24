@@ -6,6 +6,7 @@ import { loadSlim } from "@tsparticles/slim"; // Versión ligera
 import { Academic } from '../academic.component/academic.component';
 import { CollaborationsComponent } from '../collaborations.component/collaborations.component';
 import { ExperienceComponent } from '../experience.component/experience.component';
+import { isPlatformBrowser } from '@angular/common';
 
  
 @Component({
