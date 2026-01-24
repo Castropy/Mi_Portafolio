@@ -11,7 +11,13 @@ import { ExperienceComponent } from '../experience.component/experience.componen
 @Component({
   selector: 'app-home.component',
   standalone: true,
-  imports: [RouterModule, NgxParticlesModule, Academic, CollaborationsComponent, ExperienceComponent], // Añádelo a los imports
+  imports: [
+    RouterModule, 
+    NgxParticlesModule, 
+    Academic, 
+    CollaborationsComponent, 
+    ExperienceComponent
+  ], // Añádelo a los imports
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 @Component({
-  selector: 'app-experience.component',
+  selector: 'app-experience',
   standalone: true,
   imports: [RouterModule],
   templateUrl: './experience.component.html',

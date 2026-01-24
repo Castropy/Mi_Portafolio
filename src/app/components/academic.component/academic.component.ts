@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-academic.component',
+  selector: 'app-academic',
   standalone: true,
   imports: [RouterModule],
   templateUrl: './academic.component.html',
