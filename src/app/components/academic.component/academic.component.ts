@@ -11,5 +11,9 @@ import { DataService } from '../../services/data.service';
   styleUrl: './academic.component.scss',
 })
 export class Academic {
-
+// Acceso al cerebro de datos
+  private dataService = Inject(DataService);
+  
+  // Exponemos la señal a la vista
+  public info = this.dataService.academicData
 }
