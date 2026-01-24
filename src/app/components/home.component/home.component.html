@@ -1,9 +1,14 @@
 <div class="home-page">
+ @if (isBrowser()) {
   <ngx-particles
     id="tsparticles"
     [options]="particlesOptions"
     [particlesInit]="particlesInit">
   </ngx-particles>
+}
+
+<div class="content">
+  </div>
 
   <main class="content">
     <header class="hero">
