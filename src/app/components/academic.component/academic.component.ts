@@ -15,5 +15,5 @@ export class Academic {
   private dataService = Inject(DataService);
   
   // Exponemos la señal a la vista
-  public info = this.dataService.academicData
+  public info = this.dataService.academicData;
 }
