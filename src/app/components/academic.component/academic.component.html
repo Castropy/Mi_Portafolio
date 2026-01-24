@@ -1,1 +1,17 @@
-<p>academic works!</p>
+<section class="academic-section glass-card">
+  <div class="header">
+    <h2>{{ info().title }}</h2>
+    <span class="badge">{{ info().year }}</span>
+  </div>
+  
+  <h3>{{ info().university }}</h3>
+  <p class="description">{{ info().description }}</p>
+
+  <div class="photo-grid">
+    @for (photo of info().images; track photo.url) {
+      <div class="photo-item">
+        <img [src]="photo.url" [alt]="photo.alt">
+      </div>
+    }
+  </div>
+</section>
