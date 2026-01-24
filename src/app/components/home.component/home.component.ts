@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { NgxParticlesModule } from "@tsparticles/angular"; // Importa el módulo
 import { MoveDirection, OutMode } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // Versión ligera
-
+ 
 @Component({
   selector: 'app-home.component',
   standalone: true,
