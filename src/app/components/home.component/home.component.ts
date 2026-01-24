@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, PLATFORM_ID, inject, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NgxParticlesModule } from "@tsparticles/angular"; // Importa el módulo
 import { MoveDirection, OutMode } from "@tsparticles/engine";
