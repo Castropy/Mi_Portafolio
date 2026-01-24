@@ -14,8 +14,8 @@ export class DataService {
     year: '202X',
     description: 'Carrera con mencion en Tecnologia Web',
     images: [
-      { url: 'assets/grado/titulo.jpg', alt: 'Título de TSU' },
-      { url: 'assets/grado/acto.jpg', alt: 'Foto Acto de Grado' }
+      { url: 'https://picsum.photos/400/300', alt: 'Título de TSU' },
+      { url: 'https://picsum.photos/400/300?random=1', alt: 'Foto Acto de Grado' }
     ]
   });
 
