@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-academic',
+  standalone: true,
   imports: [],
-  templateUrl: './academic.html',
-  styleUrl: './academic.scss',
+  templateUrl: './academic.component.html',
+  styleUrl: './academic.component.scss',
 })
 export class Academic {
 
