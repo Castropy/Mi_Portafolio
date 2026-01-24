@@ -23,6 +23,17 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
+  // Inyectamos el ID de la plataforma
+  private platformId = inject(PLATFORM_ID);
+  
+  // Creamos una señal para saber si estamos en el navegador
+  isBrowser = signal(false);
+
+  constructor() {
+    // Verificamos si estamos en el navegador
+    this.isBrowser.set(isPlatformBrowser(this.platformId));
+  }
+
   // Configuración de las partículas
   particlesOptions = {
     background: { opacity: 0 }, // Para que se vea tu imagen de fondo
