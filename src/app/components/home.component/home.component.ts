@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { NgxParticlesModule } from "@tsparticles/angular"; // Importa el módulo
 import { MoveDirection, OutMode } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // Versión ligera
-import { Academic} from '../academic.component/academic.component';
+import { Academic } from '../academic.component/academic.component';
 import { CollaborationsComponent } from '../collaborations.component/collaborations.component';
 import { ExperienceComponent } from '../experience.component/experience.component';
 
