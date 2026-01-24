@@ -1,14 +1,7 @@
 <div class="home-page">
- @if (isBrowser()) {
-  <ngx-particles
-    id="tsparticles"
-    [options]="particlesOptions"
-    [particlesInit]="particlesInit">
-  </ngx-particles>
-}
-
-<div class="content">
-  </div>
+  @if (isBrowser()) {
+    <ngx-particles id="tsparticles" [options]="particlesOptions" [particlesInit]="particlesInit"></ngx-particles>
+  }
 
   <main class="content">
     <header class="hero">
@@ -16,10 +9,10 @@
       <p>TSU en Análisis de Sistemas | Fullstack Developer</p>
     </header>
 
-    <section class="section-container">
+    <div class="section-wrapper">
       <app-academic></app-academic>
       <app-experience></app-experience>
       <app-collaborations></app-collaborations>
-    </section>
+    </div>
   </main>
 </div>
