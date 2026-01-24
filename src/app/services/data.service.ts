@@ -11,11 +11,11 @@ export class DataService {
   readonly academicData = signal<Academic>({
     title: 'TSU en Análisis de Sistemas',
     university: 'Instituto universitario de tecnologia para la informatica',
-    year: '202X',
+    year: '2024',
     description: 'Carrera con mencion en Tecnologia Web, Graduado en DEC 2024',
     images: [
-      { url: 'https://picsum.photos/400/300', alt: 'Título de TSU' },
-      { url: 'https://picsum.photos/400/300?random=1', alt: 'Foto Acto de Grado' }
+      { url: 'assets/academic/acto_grado1.JPG', alt: 'Título de TSU' },
+      { url: 'assets/academic/acto_grado2.JPG', alt: 'Foto Acto de Grado' }
     ]
   });
 
