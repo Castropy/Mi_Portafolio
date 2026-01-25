@@ -1,1 +1,28 @@
-<p>collaborations.component works!</p>
+<section class="collaborations-section">
+  <h2 class="section-title">Colaboraciones Open Source</h2>
+
+  <div class="collab-grid">
+    @for (collab of collaborations(); track collab.repoName) {
+      <div class="collab-card glass-card">
+        <div class="collab-icon">
+          <i class="bi bi-git"></i>
+        </div>
+        
+        <div class="collab-content">
+          <div class="collab-header">
+            <h3>{{ collab.repoName }}</h3>
+            <span class="role-badge">{{ collab.role }}</span>
+          </div>
+          
+          <p class="description">
+            {{ collab.description || 'Contribución activa en el desarrollo y mejora del repositorio.' }}
+          </p>
+          
+          <a [href]="collab.repoUrl" target="_blank" class="repo-link">
+            Explorar Repositorio <i class="bi bi-box-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    }
+  </div>
+</section>
