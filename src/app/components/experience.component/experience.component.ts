@@ -10,5 +10,9 @@ import { DataService } from '../../services/data.service';
   styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
-
+  
+  private dataService = inject(DataService);
+  
+  // Obtenemos la señal de proyectos
+  public projects = this.dataService.projects;
 }
