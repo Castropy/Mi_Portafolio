@@ -1,0 +1,83 @@
+.collaborations-section {
+  padding: 2rem 0;
+
+  .section-title {
+    color: #00d4ff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .collab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .collab-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: #00d4ff;
+    }
+
+    .collab-icon {
+      font-size: 2rem;
+      color: #00d4ff;
+      opacity: 0.8;
+    }
+
+    .collab-content {
+      flex: 1;
+
+      .collab-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        h3 {
+          margin: 0;
+          font-size: 1.2rem;
+          color: #fff;
+        }
+
+        .role-badge {
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          background: rgba(0, 212, 255, 0.2);
+          color: #00d4ff;
+          padding: 2px 8px;
+          border-radius: 4px;
+          border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+      }
+
+      .description {
+        font-size: 0.9rem;
+        opacity: 0.7;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+      }
+
+      .repo-link {
+        font-size: 0.85rem;
+        color: #00d4ff;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
