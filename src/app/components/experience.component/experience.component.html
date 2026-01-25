@@ -4,7 +4,7 @@
   <div class="projects-grid">
     @for (project of projects(); track project.name) {
       <div class="project-card glass-card">
-        <div class="project-image">
+        <div class="project-image" [class.mobile-frame]="project.type === 'Flutter'">
           <img [src]="project.images[0].url" [alt]="project.images[0].alt">
           <span class="project-type">{{ project.type }}</span>
         </div>
