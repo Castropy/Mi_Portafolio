@@ -1,6 +1,12 @@
 .contact-section {
   padding: 4rem 0;
 
+  .section-title {
+    color: #00d4ff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .contact-card {
     max-width: 900px;
     margin: 0 auto;
@@ -16,6 +22,8 @@
         grid-template-columns: 1fr;
       }
     }
+
+    
 
     .contact-image {
       height: 100%;
