@@ -1,1 +1,44 @@
-<p>contact.component works!</p>
+<section class="contact-section">
+  <h2 class="section-title">Contacto</h2>
+
+  <div class="contact-card glass-card">
+    <div class="contact-grid">
+      
+      <div class="contact-image">
+        <img [src]="contact().images[0].url" [alt]="contact().images[0].alt">
+      </div>
+
+      <div class="contact-info">
+        <h3>¿Tienes un proyecto en mente?</h3>
+        <p>Estoy disponible para trabajar en nuevas ideas y colaborar con equipos innovadores.</p>
+
+        <div class="info-items">
+          <div class="info-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <label>Email</label>
+              <a [href]="'mailto:' + contact().email">{{ contact().email }}</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="bi bi-github"></i>
+            <div>
+              <label>GitHub</label>
+              <a [href]="contact().githubUrl" target="_blank">github.com/Castropy</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <label>Ubicación</label>
+              <span>{{ contact().location }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
