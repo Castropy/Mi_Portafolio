@@ -21,7 +21,7 @@ export class DataService {
 
   readonly projects = signal<Project[]>([
     {
-      name: 'Recetas App)',
+      name: 'Recetas App',
       description: 'Aplicación móvil multiplataforma para cotizar costos de producion, gestion de inventario, reportes por ventas, entradas y salidas del inventario.',
       techStack: ['Flutter', 'Dart', 'Drift', 'Android Studio'],
       type: 'Flutter',
