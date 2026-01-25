@@ -1,6 +1,6 @@
 // src/app/services/data.service.ts
 import { Injectable, signal } from '@angular/core';
-import { Academic, Project, Collaboration } from '../models/portafolio.models';
+import { Academic, Project, Collaboration, Contact } from '../models/portafolio.models';
 
 @Injectable({
   providedIn: 'root'
@@ -46,6 +46,16 @@ export class DataService {
       role: 'Issues',
     }
   ]);
+
+  
+readonly contact = signal<Contact>({
+  email: 'tu-correo@ejemplo.com',
+  githubUrl: 'https://github.com/Castropy',
+  location: 'Venezuela',
+  images: [
+    { url: 'assets/contact/perfil.jpg', alt: 'Foto de contacto Ricardo Castro' }
+  ]
+});
 
   constructor() { }
 }
