@@ -49,7 +49,7 @@ export class DataService {
 
   
 readonly contact = signal<Contact>({
-  email: 'tu-correo@ejemplo.com',
+  email: 'castrodevsoftware@gmail.com',
   githubUrl: 'https://github.com/Castropy',
   location: 'Venezuela',
   images: [
