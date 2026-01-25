@@ -34,7 +34,7 @@ export class DataService {
       techStack: ['Angular', 'TypeScript', 'SCSS', 'Django', 'DRF'],
       type: 'Angular',
       githubUrl: 'https://github.com/Castropy/Login_frontend_with_angular',
-      images: [{ url: 'assets/projects/angular-web.jpg', alt: 'Vista principal' }]
+      images: [{ url: 'assets/experience/Login.jpg', alt: 'Vista principal' }]
     }
   ]);
 
