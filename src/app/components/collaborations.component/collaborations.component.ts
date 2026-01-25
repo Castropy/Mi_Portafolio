@@ -11,5 +11,9 @@ import { DataService } from '../../services/data.service';
   styleUrl: './collaborations.component.scss',
 })
 export class CollaborationsComponent {
+  private dataService = inject(DataService);
+  
+  // Obtenemos la señal de proyectos
+  public collaborations = this.dataService.collaborations;
 
 }
