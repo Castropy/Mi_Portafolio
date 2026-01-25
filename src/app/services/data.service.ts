@@ -53,7 +53,7 @@ readonly contact = signal<Contact>({
   githubUrl: 'https://github.com/Castropy',
   location: 'Venezuela',
   images: [
-    { url: 'assets/contact/perfil.jpg', alt: 'Foto de contacto Ricardo Castro' }
+    { url: 'assets/contact/miphoto.jpg', alt: 'Foto de contacto Ricardo Castro' }
   ]
 });
 
