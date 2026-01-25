@@ -7,6 +7,7 @@ import { Academic } from '../academic.component/academic.component';
 import { CollaborationsComponent } from '../collaborations.component/collaborations.component';
 import { ExperienceComponent } from '../experience.component/experience.component';
 import { isPlatformBrowser } from '@angular/common';
+import { ContactComponent } from '../contact.component/contact.component';
 
  
 @Component({
@@ -17,7 +18,8 @@ import { isPlatformBrowser } from '@angular/common';
     NgxParticlesModule, 
     Academic, 
     CollaborationsComponent, 
-    ExperienceComponent
+    ExperienceComponent,
+    ContactComponent
   ], // Añádelo a los imports
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
