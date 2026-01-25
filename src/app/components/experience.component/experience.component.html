@@ -1,1 +1,29 @@
-<p>experience.component works!</p>
+<section class="experience-section">
+  <h2 class="section-title">Proyectos y Experiencia</h2>
+
+  <div class="projects-grid">
+    @for (project of projects(); track project.name) {
+      <div class="project-card glass-card">
+        <div class="project-image">
+          <img [src]="project.images[0].url" [alt]="project.images[0].alt">
+          <span class="project-type">{{ project.type }}</span>
+        </div>
+
+        <div class="project-info">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          
+          <div class="tech-stack">
+            @for (tech of project.techStack; track tech) {
+              <span class="tech-tag">{{ tech }}</span>
+            }
+          </div>
+
+          <a [href]="project.githubUrl" target="_blank" class="github-link">
+            Ver en GitHub <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    }
+  </div>
+</section>
