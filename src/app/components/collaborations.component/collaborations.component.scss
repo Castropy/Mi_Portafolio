@@ -76,6 +76,8 @@
       }
 
       .description {
+  color: rgba(255, 255, 255, 0.9); // Un poco más cerca del blanco para mejor lectura
+  font-weight: 300;
   font-size: 0.9rem;
   opacity: 0.7;
   line-height: 1.5;
@@ -87,6 +89,7 @@
   -webkit-line-clamp: 4; // Lógica para navegadores basados en Webkit
   line-clamp: 4;         // Propiedad estándar (lo que te pedía el error)
   overflow: hidden;
+  
 }
 
       .repo-link {
