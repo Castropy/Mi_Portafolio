@@ -4,8 +4,8 @@
   <div class="collab-grid">
     @for (collab of collaborations(); track collab.repoName) {
       <div class="collab-card glass-card">
-        <div class="collab-icon">
-          <i class="bi bi-git"></i>
+        <div class="github-icon-area">
+          <i class="bi bi-github"></i>
         </div>
         
         <div class="collab-content">
@@ -14,9 +14,7 @@
             <span class="role-badge">{{ collab.role }}</span>
           </div>
           
-          <p class="description">
-            {{ collab.description || 'Contribución activa en el desarrollo y mejora del repositorio.' }}
-          </p>
+          <p class="description">{{ collab.description }}</p>
           
           <a [href]="collab.repoUrl" target="_blank" class="repo-link">
             Explorar Repositorio <i class="bi bi-box-arrow-up-right"></i>

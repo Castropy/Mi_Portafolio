@@ -43,7 +43,7 @@ export class DataService {
       repoName: 'Connect',
       description: 'Connect App A modern task-sharing platform where users can post tasks, hire service providers, chat, manage profiles, track locations, and complete work seamlessly using a clean Flutter UI.',
       repoUrl: 'https://github.com/hassan689/connect',
-      role: 'Issues'
+      role: 'Issues',
     }
   ]);
 
