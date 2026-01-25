@@ -26,7 +26,7 @@ export class DataService {
       techStack: ['Flutter', 'Dart', 'Drift', 'Android Studio'],
       type: 'Flutter',
       githubUrl: 'https://github.com/Castropy/recetas_app',
-      images: [{ url: 'assets/projects/flutter-app.jpg', alt: 'Vista principal App' }]
+      images: [{ url: 'assets/experience/recetas_app.jpg', alt: 'Vista principal App' }]
     },
     {
       name: 'Login web',
@@ -34,7 +34,7 @@ export class DataService {
       techStack: ['Angular', 'TypeScript', 'SCSS', 'Django', 'DRF'],
       type: 'Angular',
       githubUrl: 'https://github.com/Castropy/Login_frontend_with_angular',
-      images: [{ url: 'assets/projects/angular-web.jpg', alt: 'Vista Dashboard' }]
+      images: [{ url: 'assets/projects/angular-web.jpg', alt: 'Vista principal' }]
     }
   ]);
 
