@@ -22,7 +22,7 @@ export class DataService {
   readonly projects = signal<Project[]>([
     {
       name: 'Recetas App)',
-      description: 'Aplicación móvil multiplataforma para cotizar costos de producion',
+      description: 'Aplicación móvil multiplataforma para cotizar costos de producion, gestion de inventario, reportes',
       techStack: ['Flutter', 'Dart', 'Drift', 'Android Studio'],
       type: 'Flutter',
       githubUrl: 'https://github.com/Castropy/recetas_app',

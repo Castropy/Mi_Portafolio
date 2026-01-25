@@ -18,16 +18,30 @@
   }
 
   .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); // Dos columnas si hay espacio
+  gap: 1.5rem;
+  margin-top: 2rem;
 
-    .photo-item img {
+  .photo-item {
+    width: 100%;
+    height: 300px; // <-- Aquí definimos la altura uniforme para ambas
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+    img {
       width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-      &:hover { transform: scale(1.05); }
+      height: 100%; // Obligamos a la imagen a llenar el contenedor
+      object-fit: cover; // <-- REGLA DE ORO: Recorta la imagen para que llene el espacio sin estirarse
+      object-position: center; // Centra el recorte (importante para que no se corten las cabezas)
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: scale(1.1); // Efecto zoom suave al pasar el mouse
+      }
     }
   }
+ }
 }
