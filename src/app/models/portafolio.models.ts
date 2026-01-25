@@ -29,3 +29,10 @@ export interface Collaboration {
   repoUrl: string;
   role: string; // Ejemplo: "Contributor", "Issue Reporter", "Documentation"
 }
+
+export interface Contact {
+  email: string;
+  githubUrl: string;
+  location: string;
+  images: ImageGallery[];
+}
