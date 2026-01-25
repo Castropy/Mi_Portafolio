@@ -1,19 +1,20 @@
 import { Component, inject } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { DataService } from '../../services/data.service';
- 
+
+
 @Component({
-  selector: 'app-academic',
+  selector: 'app-contact',
   standalone: true,
   imports: [RouterModule, CommonModule],
-  templateUrl: './academic.component.html',
-  styleUrl: './academic.component.scss',
+  templateUrl: './contact.component.html',
+  styleUrl: './contact.component.scss',
 })
-export class Academic {
-// Acceso al cerebro de datos
+export class ContactComponent {
+ // Acceso al cerebro de datos
   private dataService = inject(DataService);
   
   // Exponemos la señal a la vista
-  public info = this.dataService.academicData;
+   public contact = this.dataService.contact;
 }
