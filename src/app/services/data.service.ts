@@ -51,8 +51,23 @@ export class DataService {
   readonly collaborations = signal<Collaboration[]>([
     {
       repoName: 'Connect',
-      description: 'Connect App A modern task-sharing platform where users can post tasks, hire service providers, chat, manage profiles, track locations, and complete work seamlessly using a clean Flutter UI.',
+      description: 'Connect App A modern task-sharing platform where' +
+       'users can post tasks, hire service providers, chat, manage profiles,' +
+        'track locations, and complete work seamlessly using a clean Flutter UI.', 
       repoUrl: 'https://github.com/hassan689/connect',
+      role: 'Issues',
+    },
+    {
+      repoName: 'Rattle',
+      description: 'The Next Generation Data Scientist:'+
+      'Rattle has been in development and use for almost 20 years' +
+      ' as a Data Mining and now Data Science toolkit' +
+      'for the apprentice and practising Data Scientist.' +
+      'The open source software and it books and papers have' +
+      'been used by educators, consultants, and practitioners' +
+      'across industry and government, to turn data into knowledge' +
+      'through machine learning and artificial intelligence.', 
+      repoUrl: 'https://github.com/gjwgit/rattle',
       role: 'Issues',
     }
   ]);
