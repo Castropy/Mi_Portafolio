@@ -22,9 +22,11 @@
           <a [href]="project.githubUrl" target="_blank" class="github-link">
             Ver en GitHub <i class="bi bi-github"></i>
           </a>
-          <a [href]="project.playStoreUrl" target="_blank" class="playstore-link">
-            Ver en Play Store <i class="bi bi-play-store"></i>
-          </a>
+          @if (project.playStoreUrl) {
+            <a [href]="project.playStoreUrl" target="_blank" class="playstore-link">
+              Ver en Play Store <i class="bi bi-google-play"></i>
+            </a>
+          }
         </div>
       </div>
     }
