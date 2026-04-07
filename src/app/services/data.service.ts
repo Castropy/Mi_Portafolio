@@ -27,7 +27,9 @@ export class DataService {
       type: 'Flutter',
       githubUrl: 'https://github.com/Castropy/recetas_app',
       playStoreUrl: 'https://play.google.com/store/apps/details?id=com.castrodev.recetas',
-      images: [{ url: 'assets/experience/recetas_app.jpg', alt: 'Vista principal App' }]
+      images: [{ url: 'assets/experience/recetas_app.jpg', alt: 'Vista principal App' },
+        { url: 'assets/experience/ps.webp', alt: 'Play Store' }
+      ]
     },
     {
       name: 'Login web',
