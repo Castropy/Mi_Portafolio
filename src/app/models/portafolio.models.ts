@@ -19,6 +19,7 @@ export interface Project {
   techStack: string[];
   githubUrl?: string;
   liveUrl?: string;
+  playStoreUrl?: string;
   images: ImageGallery[];
   type: 'Flutter' | 'Angular' | 'Django';
 }

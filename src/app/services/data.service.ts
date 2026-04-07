@@ -1,7 +1,7 @@
 // src/app/services/data.service.ts
 import { Injectable, signal } from '@angular/core';
 import { Academic, Project, Collaboration, Contact } from '../models/portafolio.models';
-
+ 
 @Injectable({
   providedIn: 'root'
 })
@@ -26,6 +26,7 @@ export class DataService {
       techStack: ['Flutter', 'Dart', 'Drift', 'Android Studio'],
       type: 'Flutter',
       githubUrl: 'https://github.com/Castropy/recetas_app',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.castrodev.recetas',
       images: [{ url: 'assets/experience/recetas_app.jpg', alt: 'Vista principal App' }]
     },
     {
